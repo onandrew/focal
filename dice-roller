@@ -1,0 +1,8 @@
+const diceRolls= function(num){
+  let rolls = "";
+  for (let x = 1; x <= num; x++){
+    rolls += Math.floor(Math.random()*6 + 1) + ", ";
+  }
+  return rolls;
+}
+console.log(`Rolled dice:`, diceRolls(process.argv[2])); 
